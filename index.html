@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>GAGS: Geometry Aware-Guided 3D Gaussian Splatting for High-Quality Rendering and Surface Reconstruction</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <link type="stylesheet" href="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.css">
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title" >GAGS: Geometry Aware-Guided 3D Gaussian Splatting for High-Quality Rendering and Surface Reconstruction</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Xiaosong Wei</a>,</span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Annan Zhou</a>,</span>
+
+                  <span class="author-block">
+                    <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Pengwei Zhou</a>,</span>
+                  </span>
+
+                  <span class="author-block">
+                    <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Li Li</a>,</span>
+                  </span>
+
+                  <span class="author-block">
+                    <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Ruihao Shi</a>,</span>
+                  </span>
+
+                  <span class="author-block">
+                    <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Wenming Song</a>,</span>
+                  </span>
+
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Jian Yao</a><sup>*</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">School of Remote Sensing and Information Engineering, Wuhan University</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/VerseWei/GAGS" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <img src="static/images/GraphicAbstract.jpg" alt="MY ALT TEXT" style="max-width: 100%; height: auto;">
+      <h2 class="subtitle has-text-centered">
+        A comparison of the surface reconstruction results of 2DGS, Gaussian Surfels, PGSR and our method is presented at the top left, with the rendered views at the bottom. This comparison is also quantified in the 2D plot on the right.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            3D Gaussian Splatting (3DGS) has been explored for surface reconstruction, however unstructured and discontinuous Gaussian point clouds lead to uneven surface reconstruction accuracy as well as frequent loss of Novel View Synthesis (NVS) quality. To address this problem, we propose a geometry aware-guided 3DGS, a promising novel framework that combines geometric prior regularization and consistency supervision to achieve high-quality rendering and surface reconstruction. Specifically, monocular depth, estimated by some recently proposed monocular depth estimation models, contain implicitly abundant valuable geometric cues, but scale ambiguity limits its application. Therefore we first propose a K-Nearest Neighbor (KNN)-based depth alignment framework that utilizes the full-domain gradient at monocular depth map to align to the sparse point cloud obtained during the Structure from Motion (SfM), which is employed for regularization to enhance geometric representation. Then a pseudo-mesh-based multi-view consistency module is introduced to fine-tune and guide the model to recover the accurate surface. Finally, a pixel-level isotropic gradient aware method guides the appropriate growth of the Gaussians to further improve the surface and rendering quality. Experiments on dozens of indoor, outdoor, and object-centered/non-object-centered datasets demonstrate that our method achieves accurate surface reconstruction with excellent NVS performance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<section class="hero teaser mipnerf">
+  <style>
+    .video-section .video-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      position: relative;
+    }
+
+    .video-section .video-item {
+      position: relative;
+    }
+
+    .video-section .video-item video {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .video-section .video-label {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      background: rgba(0, 0, 0, 0.6); /* 半透明黑色背景 */
+      color: white;
+      padding: 2px 6px;
+      font-size: 0.8rem;
+      border-radius: 4px;
+      pointer-events: none; /* 不影响视频点击 */
+    }
+  </style>
+  <div class="container is-max-desktop video-section">
+    <div class="hero-body">
+      <div class="video-grid">
+        <div class="video-item">
+          <div class="video-label">PGSR</div>
+          <video poster="" autoplay controls muted loop>
+            <source src="static/videos/flowers_pgsr.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-item">
+          <div class="video-label">Gaussian Surfels</div>
+          <video poster="" autoplay controls muted loop>
+            <source src="static/videos/flowers_gaussiansurfels.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-item">
+          <div class="video-label">Ours</div>
+          <video poster="" autoplay controls muted loop>
+            <source src="static/videos/flowers_ours.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-item">
+          <div class="video-label">PGSR</div>
+          <video poster="" autoplay controls muted loop>
+            <source src="static/videos/bicycle_pgsr.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-item">
+          <div class="video-label">Gaussian Surfels</div>
+          <video poster="" autoplay controls muted loop>
+            <source src="static/videos/bicycle_gaussiansurfels.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-item">
+          <div class="video-label">Ours</div>
+          <video poster="" autoplay controls muted loop>
+            <source src="static/videos/bicycle_ours.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser tnt">
+  <h2 class="title is-3 has-text-centered">Tank and Temples</h2>
+  <style>
+    .carousel-container {
+      position: relative;
+      max-width: 1000px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.1s ease;
+    }
+
+    .video-group {
+      display: flex;
+      flex: 0 0 100%;
+      justify-content: space-around;
+    }
+
+    .carousel-container .video-item {
+      width: 32%;
+      position: relative;
+    }
+
+    .carousel-container .video-item video {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .carousel-container .video-label {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 2px 6px;
+      font-size: 0.8rem;
+      border-radius: 4px;
+      pointer-events: none;
+    }
+
+    .carousel-buttons {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .carousel-buttons button {
+      background-color: #3273dc;
+      border: none;
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .carousel-buttons button:hover {
+      background-color: #2759a4;
+    }
+
+    .prev-button {
+      position: relative;
+      left: -10px;
+    }
+
+    .next-button {
+      position: relative;
+      right: -10px;
+    }
+
+    .prev-button::before, .next-button::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      transform: translate(-50%, -50%);
+    }
+
+    .prev-button::before {
+      border-width: 10px 15px 10px 0;
+      border-color: transparent #fff transparent transparent;
+    }
+
+    .next-button::before {
+      border-width: 10px 0 10px 15px;
+      border-color: transparent transparent transparent #fff;
+    }
+
+    .carousel-buttons button:hover {
+      background: #2759a4;
+    }
+  </style>
+
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="carousel-container">
+        <div class="carousel-track" id="carousel-track">
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/videos/Auditorium_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/videos/Auditorium_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/videos/Auditorium_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/videos/Ballroom_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/videos/Ballroom_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/videos/Ballroom_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">Render</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/Barn_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Depth</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/Barn_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Normal</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/Barn_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">Render</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/Church_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Depth</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/Church_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Normal</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/Church_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">Render</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/Courtroom_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Depth</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/Courtroom_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Normal</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/Courtroom_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">Render</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/Family_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Depth</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/Family_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Normal</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/Family_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">Render</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/Horse_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Depth</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/Horse_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Normal</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/Horse_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">Render</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/Train_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Depth</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/Train_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Normal</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/Train_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">Render</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/Truck_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Depth</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/Truck_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Normal</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/Truck_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">Render</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/Playground_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Depth</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/Playground_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Normal</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/Playground_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">Render</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/Ignatius_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Depth</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/Ignatius_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Normal</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/Ignatius_render.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">Render</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/M60_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Depth</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/M60_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Normal</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/M60_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">Render</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/Francis_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Depth</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/Francis_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Normal</div>
+              <video poster="" autoplay controls muted loop>
+                <source src="static/videos/Francis_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="carousel-buttons">
+        <button onclick="moveSlide(-1)" class="prev-button"></button>
+        <button onclick="moveSlide(1)" class="next-button"></button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const track = document.getElementById('carousel-track');
+    let currentIndex = 0;
+    const groups = document.querySelectorAll('.video-group');
+    const totalGroups = groups.length;
+
+    function moveSlide(direction) {
+      currentIndex += direction;
+      if (currentIndex < 0) {
+        currentIndex = totalGroups - 1; // 回到最后一组
+      } else if (currentIndex >= totalGroups) {
+        currentIndex = 0; // 回到第一组
+      }
+      const translateX = -currentIndex * 100;
+      track.style.transform = `translateX(${translateX}%)`;
+    }
+  </script>
+</section>
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Coming soon</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+
+  <script src="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.js"></script>
+
+  </body>
+  </html>
