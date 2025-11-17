@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>GAGS: Geometry Aware-Guided 3D Gaussian Splatting for High-Quality Rendering and Surface Reconstruction</title>
+  <title>SMDGS: Scale-aligned Monocular Depth-guided 3D Gaussian Splatting for Rendering and Surface Reconstruction</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -147,7 +147,7 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container has-text-centered">
-      <img src="static/images/GraphicAbstract.jpg" alt="MY ALT TEXT" style="max-width: 100%; height: auto;">
+      <img src="static/images/GraphicAbstract.png" alt="MY ALT TEXT" style="max-width: 100%; height: auto;">
       <h2 class="subtitle has-text-centered">
         A comparison of the surface reconstruction results of 2DGS, Gaussian Surfels, PGSR and our method is presented at the top left, with the rendered views at the bottom. This comparison is also quantified in the 2D plot on the right.
       </h2>
@@ -209,37 +209,37 @@
         <div class="video-item">
           <div class="video-label">PGSR</div>
           <video poster="" autoplay controls muted loop>
-            <source src="static/videos/flowers_pgsr.mp4" type="video/mp4">
+            <source src="static/mipnerf360_videos/flowers_pgsr.mp4" type="video/mp4">
           </video>
         </div>
         <div class="video-item">
           <div class="video-label">Gaussian Surfels</div>
           <video poster="" autoplay controls muted loop>
-            <source src="static/videos/flowers_gaussiansurfels.mp4" type="video/mp4">
+            <source src="static/mipnerf360_videos/flowers_gaussiansurfels.mp4" type="video/mp4">
           </video>
         </div>
         <div class="video-item">
           <div class="video-label">Ours</div>
           <video poster="" autoplay controls muted loop>
-            <source src="static/videos/flowers_ours.mp4" type="video/mp4">
+            <source src="static/mipnerf360_videos/flowers_ours.mp4" type="video/mp4">
           </video>
         </div>
         <div class="video-item">
           <div class="video-label">PGSR</div>
           <video poster="" autoplay controls muted loop>
-            <source src="static/videos/bicycle_pgsr.mp4" type="video/mp4">
+            <source src="static/mipnerf360_videos/bicycle_pgsr.mp4" type="video/mp4">
           </video>
         </div>
         <div class="video-item">
           <div class="video-label">Gaussian Surfels</div>
           <video poster="" autoplay controls muted loop>
-            <source src="static/videos/bicycle_gaussiansurfels.mp4" type="video/mp4">
+            <source src="static/mipnerf360_videos/bicycle_gaussiansurfels.mp4" type="video/mp4">
           </video>
         </div>
         <div class="video-item">
           <div class="video-label">Ours</div>
           <video poster="" autoplay controls muted loop>
-            <source src="static/videos/bicycle_ours.mp4" type="video/mp4">
+            <source src="static/mipnerf360_videos/bicycle_ours.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -248,17 +248,17 @@
 </section>
 
 
-<section class="hero teaser tnt">
-  <h2 class="title is-3 has-text-centered">Tank and Temples</h2>
+<section class="ours hero teaser tnt">
+  <h2 class="title is-3 has-text-centered">Ours Tank and Temples</h2>
   <style>
-    .carousel-container {
+    .carousel-container-1 {
       position: relative;
       max-width: 1000px;
       margin: 0 auto;
       overflow: hidden;
     }
 
-    .carousel-track {
+    .carousel-track-1 {
       display: flex;
       transition: transform 0.1s ease;
     }
@@ -269,18 +269,18 @@
       justify-content: space-around;
     }
 
-    .carousel-container .video-item {
+    .carousel-container-1 .video-item {
       width: 32%;
       position: relative;
     }
 
-    .carousel-container .video-item video {
+    .carousel-container-1 .video-item video {
       width: 100%;
       height: auto;
       object-fit: cover;
     }
 
-    .carousel-container .video-label {
+    .carousel-container-1 .video-label {
       position: absolute;
       top: 8px;
       left: 8px;
@@ -350,311 +350,1011 @@
 
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <div class="carousel-container">
-        <div class="carousel-track" id="carousel-track">
+      <div class="carousel-container-1">
+        <div class="carousel-track-1" id="carousel-track-1">
 
           <div class="video-group">
             <div class="video-item">
-              <div class="video-label">Render</div>
+              <div class="video-label">Ours Render</div>
               <video autoplay controls muted loop>
-                <source src="static/videos/Auditorium_render.mp4" type="video/mp4">
+                <source src="static/ours_videos/Auditorium_render.mp4" type="video/mp4">
               </video>
             </div>
             <div class="video-item">
-              <div class="video-label">Depth</div>
+              <div class="video-label">Ours Depth</div>
               <video autoplay controls muted loop>
-                <source src="static/videos/Auditorium_depth.mp4" type="video/mp4">
+                <source src="static/ours_videos/Auditorium_depth.mp4" type="video/mp4">
               </video>
             </div>
             <div class="video-item">
-              <div class="video-label">Normal</div>
+              <div class="video-label">Ours Normal</div>
               <video autoplay controls muted loop>
-                <source src="static/videos/Auditorium_normal.mp4" type="video/mp4">
+                <source src="static/ours_videos/Auditorium_normal.mp4" type="video/mp4">
               </video>
             </div>
           </div>
 
           <div class="video-group">
             <div class="video-item">
-              <div class="video-label">Render</div>
+              <div class="video-label">Ours Render</div>
               <video autoplay controls muted loop>
-                <source src="static/videos/Ballroom_render.mp4" type="video/mp4">
+                <source src="static/ours_videos/Ballroom_render.mp4" type="video/mp4">
               </video>
             </div>
             <div class="video-item">
-              <div class="video-label">Depth</div>
+              <div class="video-label">Ours Depth</div>
               <video autoplay controls muted loop>
-                <source src="static/videos/Ballroom_depth.mp4" type="video/mp4">
+                <source src="static/ours_videos/Ballroom_depth.mp4" type="video/mp4">
               </video>
             </div>
             <div class="video-item">
-              <div class="video-label">Normal</div>
+              <div class="video-label">Ours Normal</div>
               <video autoplay controls muted loop>
-                <source src="static/videos/Ballroom_normal.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-          
-          <div class="video-group">
-            <div class="video-item">
-              <div class="video-label">Render</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/Barn_render.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="video-item">
-              <div class="video-label">Depth</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/Barn_depth.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="video-item">
-              <div class="video-label">Normal</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/Barn_normal.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-          
-          <div class="video-group">
-            <div class="video-item">
-              <div class="video-label">Render</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/Church_render.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="video-item">
-              <div class="video-label">Depth</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/Church_depth.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="video-item">
-              <div class="video-label">Normal</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/Church_normal.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-          
-          <div class="video-group">
-            <div class="video-item">
-              <div class="video-label">Render</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/Courtroom_render.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="video-item">
-              <div class="video-label">Depth</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/Courtroom_depth.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="video-item">
-              <div class="video-label">Normal</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/Courtroom_normal.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-          
-          <div class="video-group">
-            <div class="video-item">
-              <div class="video-label">Render</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/Family_render.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="video-item">
-              <div class="video-label">Depth</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/Family_depth.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="video-item">
-              <div class="video-label">Normal</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/Family_normal.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-          
-          <div class="video-group">
-            <div class="video-item">
-              <div class="video-label">Render</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/Horse_render.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="video-item">
-              <div class="video-label">Depth</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/Horse_depth.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="video-item">
-              <div class="video-label">Normal</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/Horse_normal.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-          
-          <div class="video-group">
-            <div class="video-item">
-              <div class="video-label">Render</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/Train_render.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="video-item">
-              <div class="video-label">Depth</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/Train_depth.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="video-item">
-              <div class="video-label">Normal</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/Train_normal.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-          
-          <div class="video-group">
-            <div class="video-item">
-              <div class="video-label">Render</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/Truck_render.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="video-item">
-              <div class="video-label">Depth</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/Truck_depth.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="video-item">
-              <div class="video-label">Normal</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/Truck_normal.mp4" type="video/mp4">
+                <source src="static/ours_videos/Ballroom_normal.mp4" type="video/mp4">
               </video>
             </div>
           </div>
 
           <div class="video-group">
             <div class="video-item">
-              <div class="video-label">Render</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/Playground_render.mp4" type="video/mp4">
+              <div class="video-label">Ours Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Barn_render.mp4" type="video/mp4">
               </video>
             </div>
             <div class="video-item">
-              <div class="video-label">Depth</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/Playground_depth.mp4" type="video/mp4">
+              <div class="video-label">Ours Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Barn_depth.mp4" type="video/mp4">
               </video>
             </div>
             <div class="video-item">
-              <div class="video-label">Normal</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/Playground_normal.mp4" type="video/mp4">
+              <div class="video-label">Ours Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Barn_normal.mp4" type="video/mp4">
               </video>
             </div>
           </div>
 
           <div class="video-group">
             <div class="video-item">
-              <div class="video-label">Render</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/Ignatius_render.mp4" type="video/mp4">
+              <div class="video-label">Ours Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Church_render.mp4" type="video/mp4">
               </video>
             </div>
             <div class="video-item">
-              <div class="video-label">Depth</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/Ignatius_depth.mp4" type="video/mp4">
+              <div class="video-label">Ours Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Church_depth.mp4" type="video/mp4">
               </video>
             </div>
             <div class="video-item">
-              <div class="video-label">Normal</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/Ignatius_render.mp4" type="video/mp4">
+              <div class="video-label">Ours Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Church_normal.mp4" type="video/mp4">
               </video>
             </div>
           </div>
 
           <div class="video-group">
             <div class="video-item">
-              <div class="video-label">Render</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/M60_render.mp4" type="video/mp4">
+              <div class="video-label">Ours Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Courthouse_render.mp4" type="video/mp4">
               </video>
             </div>
             <div class="video-item">
-              <div class="video-label">Depth</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/M60_depth.mp4" type="video/mp4">
+              <div class="video-label">Ours Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Courthouse_depth.mp4" type="video/mp4">
               </video>
             </div>
             <div class="video-item">
-              <div class="video-label">Normal</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/M60_normal.mp4" type="video/mp4">
+              <div class="video-label">Ours Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Courthouse_normal.mp4" type="video/mp4">
               </video>
             </div>
           </div>
 
           <div class="video-group">
             <div class="video-item">
-              <div class="video-label">Render</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/Francis_render.mp4" type="video/mp4">
+              <div class="video-label">Ours Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Courtroom_render.mp4" type="video/mp4">
               </video>
             </div>
             <div class="video-item">
-              <div class="video-label">Depth</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/Francis_depth.mp4" type="video/mp4">
+              <div class="video-label">Ours Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Courtroom_depth.mp4" type="video/mp4">
               </video>
             </div>
             <div class="video-item">
-              <div class="video-label">Normal</div>
-              <video poster="" autoplay controls muted loop>
-                <source src="static/videos/Francis_normal.mp4" type="video/mp4">
+              <div class="video-label">Ours Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Courtroom_normal.mp4" type="video/mp4">
               </video>
             </div>
           </div>
 
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">Ours Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Family_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Ours Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Family_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Ours Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Family_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">Ours Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Francis_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Ours Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Francis_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Ours Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Francis_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">Ours Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Horse_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Ours Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Horse_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Ours Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Horse_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">Ours Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Ignatius_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Ours Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Ignatius_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Ours Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Ignatius_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">Ours Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Lighthouse_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Ours Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Lighthouse_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Ours Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Lighthouse_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">Ours Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/M60_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Ours Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/M60_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Ours Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/M60_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">Ours Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Meetingroom_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Ours Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Meetingroom_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Ours Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Meetingroom_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">Ours Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Museum_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Ours Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Museum_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Ours Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Museum_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">Ours Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Palace_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Ours Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Palace_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Ours Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Palace_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">Ours Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Panther_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Ours Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Panther_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Ours Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Panther_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">Ours Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Playground_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Ours Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Playground_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Ours Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Playground_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">Ours Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Temple_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Ours Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Temple_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Ours Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Temple_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">Ours Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Train_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Ours Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Train_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Ours Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Train_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">Ours Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Truck_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Ours Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Truck_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">Ours Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/ours_videos/Truck_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          
         </div>
       </div>
 
       <div class="carousel-buttons">
-        <button onclick="moveSlide(-1)" class="prev-button"></button>
-        <button onclick="moveSlide(1)" class="next-button"></button>
+        <button onclick="moveSlide_1(-1)" class="prev-button"></button>
+        <button onclick="moveSlide_1(1)" class="next-button"></button>
       </div>
     </div>
   </div>
 
   <script>
-    const track = document.getElementById('carousel-track');
-    let currentIndex = 0;
-    const groups = document.querySelectorAll('.video-group');
-    const totalGroups = groups.length;
+    const track_1 = document.getElementById('carousel-track-1');
+    let currentIndex_1 = 0;
+    const groups_1 = document.querySelectorAll('.video-group');
+    const totalGroups_1 = groups_1.length;
 
-    function moveSlide(direction) {
-      currentIndex += direction;
-      if (currentIndex < 0) {
-        currentIndex = totalGroups - 1; // 回到最后一组
-      } else if (currentIndex >= totalGroups) {
-        currentIndex = 0; // 回到第一组
+    function moveSlide_1(direction_1) {
+      currentIndex_1 += direction_1;
+      if (currentIndex_1 < 0) {
+        currentIndex_1 = totalGroups_1 - 1; // 回到最后一组
+      } else if (currentIndex_1 >= totalGroups_1) {
+        currentIndex_1 = 0; // 回到第一组
       }
-      const translateX = -currentIndex * 100;
-      track.style.transform = `translateX(${translateX}%)`;
+      const translateX_1 = -currentIndex_1 * 100;
+      track_1.style.transform = `translateX(${translateX_1}%)`;
     }
   </script>
 </section>
 
+<section class="pgsr hero teaser tnt">
+  <h2 class="title is-3 has-text-centered">PGSR Tank and Temples</h2>
+  <style>
+    .carousel-container-2 {
+      position: relative;
+      max-width: 1000px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .carousel-track-2 {
+      display: flex;
+      transition: transform 0.1s ease;
+    }
+
+    .video-group {
+      display: flex;
+      flex: 0 0 100%;
+      justify-content: space-around;
+    }
+
+    .carousel-container-2 .video-item {
+      width: 32%;
+      position: relative;
+    }
+
+    .carousel-container-2 .video-item video {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .carousel-container-2 .video-label {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 2px 6px;
+      font-size: 0.8rem;
+      border-radius: 4px;
+      pointer-events: none;
+    }
+
+    .carousel-buttons {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .carousel-buttons button {
+      background-color: #3273dc;
+      border: none;
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .carousel-buttons button:hover {
+      background-color: #2759a4;
+    }
+
+    .prev-button {
+      position: relative;
+      left: -10px;
+    }
+
+    .next-button {
+      position: relative;
+      right: -10px;
+    }
+
+    .prev-button::before, .next-button::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      transform: translate(-50%, -50%);
+    }
+
+    .prev-button::before {
+      border-width: 10px 15px 10px 0;
+      border-color: transparent #fff transparent transparent;
+    }
+
+    .next-button::before {
+      border-width: 10px 0 10px 15px;
+      border-color: transparent transparent transparent #fff;
+    }
+
+    .carousel-buttons button:hover {
+      background: #2759a4;
+    }
+  </style>
+
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="carousel-container-2">
+        <div class="carousel-track-2" id="carousel-track-2">
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">PGSR Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Auditorium_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Auditorium_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Auditorium_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">PGSR Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Ballroom_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Ballroom_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Ballroom_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">PGSR Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Barn_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Barn_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Barn_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">PGSR Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Church_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Church_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Church_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">PGSR Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Courthouse_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Courthouse_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Courthouse_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">PGSR Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Courtroom_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Courtroom_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Courtroom_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">PGSR Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Family_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Family_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Family_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">PGSR Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Francis_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Francis_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Francis_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">PGSR Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Horse_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Horse_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Horse_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">PGSR Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Ignatius_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Ignatius_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Ignatius_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">PGSR Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Lighthouse_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Lighthouse_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Lighthouse_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">PGSR Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/M60_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/M60_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/M60_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">PGSR Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Meetingroom_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Meetingroom_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Meetingroom_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">PGSR Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Museum_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Museum_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Museum_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">PGSR Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Palace_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Palace_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Palace_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">PGSR Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Panther_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Panther_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Panther_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">PGSR Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Playground_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Playground_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Playground_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">PGSR Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Temple_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Temple_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Temple_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">PGSR Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Train_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Train_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Train_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="video-group">
+            <div class="video-item">
+              <div class="video-label">PGSR Render</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Truck_render.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Depth</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Truck_depth.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-label">PGSR Normal</div>
+              <video autoplay controls muted loop>
+                <source src="static/pgsr_videos/Truck_normal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="carousel-buttons">
+        <button onclick="moveSlide_2(-1)" class="prev-button"></button>
+        <button onclick="moveSlide_2(1)" class="next-button"></button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const track_2 = document.getElementById('carousel-track-2');
+    let currentIndex_2 = 0;
+    const groups_2 = document.querySelectorAll('.video-group');
+    const totalGroups_2 = groups_2.length;
+
+    function moveSlide_2(direction_2) {
+      currentIndex_2 += direction_2;
+      if (currentIndex_2 < 0) {
+        currentIndex_2 = totalGroups_2 - 1; // 回到最后一组
+      } else if (currentIndex_2 >= totalGroups_2) {
+        currentIndex_2 = 0; // 回到第一组
+      }
+      const translateX_2 = -currentIndex_2 * 100;
+      track_2.style.transform = `translateX(${translateX_2}%)`;
+    }
+  </script>
+</section>
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
@@ -673,7 +1373,7 @@
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
             You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
