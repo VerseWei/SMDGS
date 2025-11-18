@@ -1,5 +1,5 @@
 <p align="left">
-    🌐 <a href="https://VerseWei.github.io/GAGS/" target="_blank">Project</a>
+    🌐 <a href="https://VerseWei.github.io/SMDGS/" target="_blank">Project</a>
 </p>
 
 ## SMDGS: Scale-aligned Monocular Depth-guided 3D Gaussian Splatting for Rendering and Surface Reconstruction
