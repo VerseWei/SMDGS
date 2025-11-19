@@ -9,4 +9,4 @@ Official Implementation for the "SMDGS: Scale-aligned Monocular Depth-guided 3D 
 TODO: Tutorial of using SMDGS.
 
 ___
-**The code will be published in the coming days...**
+
