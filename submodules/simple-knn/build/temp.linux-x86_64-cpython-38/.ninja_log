@@ -1,0 +1,4 @@
+# ninja log v5
+0	4765	1739432563303209214	/home/wxs/3D_Recon/PGSR-Surfels/submodules/simple-knn/build/temp.linux-x86_64-cpython-38/simple_knn.o	4d53cb7ec87c41e5
+0	7595	1739432566132155356	/home/wxs/3D_Recon/PGSR-Surfels/submodules/simple-knn/build/temp.linux-x86_64-cpython-38/ext.o	fe18dc59182a4335
+0	24667	1739432583198831904	/home/wxs/3D_Recon/PGSR-Surfels/submodules/simple-knn/build/temp.linux-x86_64-cpython-38/spatial.o	7a340da71a4333d0
